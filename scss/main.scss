@@ -7,8 +7,6 @@
 }
 
 .header {
-  width: 100vw;
-  height: 100vh;
   background: #000000;
   color: white;
   padding: 24px 180px 24px 100px;
@@ -153,5 +151,38 @@
       display: flex;
       gap: 28px;
     }
+  }
+}
+
+.wrapper-cookie {
+  background: #212834;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.cookie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 22px 24px 22px 100px;
+
+  &__text {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &__accept-button {
+    width: 132px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+    color: inherit;
+    cursor: pointer;
   }
 }
