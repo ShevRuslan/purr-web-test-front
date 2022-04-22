@@ -5,8 +5,11 @@
   box-sizing: border-box;
 }
 
-.header {
+body {
   background: #000000;
+}
+
+.header {
   color: white;
   padding: 24px 180px 24px 100px;
 }
@@ -146,6 +149,7 @@
 }
 
 .wrapper-cookie {
+  display: none;
   background: #212834;
   width: 100%;
   position: fixed;
@@ -176,5 +180,74 @@
   border-radius: 6px;
   color: inherit;
   cursor: pointer;
+}
+
+.main .our-mission {
+  color: #ffffff;
+}
+
+.main .our-mission .contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 62px 176px;
+  width: 100%;
+  gap: 82px;
+}
+
+.main .our-mission .contact-new, .main .our-mission .contact-login {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+  width: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  padding: 55px 64px 70px 62px;
+}
+
+.main .our-mission .contact-new__typography, .main .our-mission .contact-login__typography {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.main .our-mission .contact-new__link, .main .our-mission .contact-login__link {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.main .our-mission .contact-login {
+  justify-content: center;
+}
+
+.main .our-mission .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 176px;
+}
+
+.main .our-mission .content-wrapper-text__typography {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.main .our-mission .content-wrapper-text__content {
+  width: 315px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 24px;
 }
 /*# sourceMappingURL=main.css.map */
