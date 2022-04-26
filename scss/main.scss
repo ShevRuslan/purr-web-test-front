@@ -576,4 +576,88 @@ body {
       }
     }
   }
+
+  .ordering {
+    color: #ffffff;
+    margin-top: 230px;
+
+    .wrapper-ordering-content {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 160px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__typography {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        line-height: 62px;
+      }
+
+      &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 24px;
+      }
+    }
+
+    .wrapper-ordering-steps {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-steps {
+      width: 868px;
+      height: 1038.21px;
+      background-image: url(../../img/iphone-long.png);
+      background-position: right;
+      background-size: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+
+      &__step {
+        padding: 18px;
+        background-color: #000000;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 18px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      &__step:nth-child(1) {
+        align-self: flex-end;
+        margin-right: 146px;
+        margin-top: 204px;
+      }
+
+      &__step:nth-child(2) {
+        align-self: flex-start;
+      }
+
+      &__step:nth-child(3) {
+        align-self: flex-end;
+        margin-top: 50px;
+      }
+
+      &__step:nth-child(4) {
+        align-self: flex-start;
+        margin-left: 200px;
+      }
+    }
+
+  }
 }
