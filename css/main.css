@@ -645,4 +645,110 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.main .get-in-touch {
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.main .get-in-touch-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .get-in-touch-text__typography {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+}
+
+.main .get-in-touch-text__content {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.main .get-in-touch .wrapper-form {
+  padding: 0px 300px;
+  margin-top: 82px;
+}
+
+.main .get-in-touch-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.main .get-in-touch-form-city {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+
+.main .get-in-touch-form__input {
+  width: 100%;
+  background-color: #ffffff;
+  outline: none;
+  border: 1px solid #5C5C5C;
+  border-radius: 10px;
+  padding-left: 24px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+
+.main .get-in-touch-form__input::placeholder {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #BFBFBF;
+}
+
+.main .get-in-touch-form__textarea {
+  resize: none;
+}
+
+.main .get-in-touch-form__button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 25px 167px;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.main .get-in-touch .downloads {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 92px;
+}
+
+.main .get-in-touch .downloads-typography__text {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 32px;
+}
+
+.main .get-in-touch .downloads-markets {
+  gap: 40px;
+}
 /*# sourceMappingURL=main.css.map */
