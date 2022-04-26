@@ -134,26 +134,26 @@ body {
       }
     }
   }
+}
 
-  .downloads {
+.downloads {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 54px;
+
+  &-typography {
+    &__text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 70px;
+    }
+  }
+
+  &-markets {
     display: flex;
-    justify-content: space-between;
-    margin-top: 54px;
-
-    &-typography {
-      &__text {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 70px;
-      }
-    }
-
-    &-markets {
-      display: flex;
-      gap: 28px;
-    }
+    gap: 28px;
   }
 }
 
@@ -436,6 +436,144 @@ body {
         }
       }
 
+    }
+  }
+
+  .qr-code {
+    margin-top: 452px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url(../../img/background-dj.png) no-repeat,
+      url(../../img/background-coctail.png) no-repeat 100% 0;
+    position: relative;
+
+
+    &:after {
+      content: "";
+      width: 140px;
+      height: 80px;
+      background-image: url(../../img/nightlife.svg);
+      background-size: cover;
+      position: absolute;
+      right: 5%;
+      top: 0;
+    }
+
+    .orders {
+      height: 1100px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 200px;
+      padding-right: 58px;
+    }
+
+    &-content {
+      color: #fff;
+      align-self: center;
+
+      &__typography {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        line-height: 62px;
+      }
+
+      &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 24px;
+        margin-bottom: 58px;
+      }
+    }
+
+    &-first-order {
+      align-self: flex-start;
+      margin-top: 80px;
+    }
+
+    &-second-order {
+      align-self: flex-end;
+    }
+
+    &-generate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 42px;
+      background-image: url(../../img/no-tab.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: center;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 1022px;
+        height: 952px;
+        position: absolute;
+        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+        opacity: 0.2;
+        filter: blur(311.569px);
+        border-radius: 476.034px;
+        transform: rotate(-0.55deg);
+      }
+
+      &-wrapper-image {
+        z-index: 1;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          right: -43%;
+          top: 28%;
+          width: 80px;
+          height: 80px;
+          background-image: url(../../img/arrow.svg);
+          background-repeat: no-repeat;
+
+        }
+
+        &:before {
+          content: "Scan QR-code";
+          position: absolute;
+          right: -90%;
+          top: 40%;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 26px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    &-generate-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      margin-top: 80px;
+      padding: 0px 100px;
+
+      &__typography {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 51px;
+        line-height: 62px;
+      }
+
+      &__text {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+      }
     }
   }
 }
