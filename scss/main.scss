@@ -781,3 +781,61 @@ body {
     }
   }
 }
+
+.footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 85px 108px;
+  margin-top: 75px;
+
+  &-left-side {
+    display: flex;
+    flex-direction: column;
+
+    &__typography {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &__text {
+      margin-top: 16px;
+    }
+
+    &__link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bolder;
+    }
+
+    &__text,
+    &__link {
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+
+  &-right-side {
+    &-navbar {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      &__element {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+}

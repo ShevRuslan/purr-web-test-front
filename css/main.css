@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@100;400;500&family=Roboto:wght@400;500&display=swap");
+@font-face {
+  font-family: 'Avenir';
+  src: url(../../fonts/AvenirLTStd-Book.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -750,5 +755,60 @@ body {
 
 .main .get-in-touch .downloads-markets {
   gap: 40px;
+}
+
+.footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 85px 108px;
+  margin-top: 75px;
+}
+
+.footer-left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left-side__typography {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-left-side__text {
+  margin-top: 16px;
+}
+
+.footer-left-side__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.footer-left-side__text, .footer-left-side__link {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.footer-right-side-navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-right-side-navbar__element {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
