@@ -49,6 +49,23 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+.header .navbar-login__text:before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 0%;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.header .navbar-login__text:hover:before {
+  content: '';
+  width: 100%;
+  transition: 0.5s;
 }
 
 .header .about-us {
@@ -771,6 +788,7 @@ body {
   padding-left: 24px;
   padding-top: 29px;
   padding-bottom: 29px;
+  transition: all 0.2s ease-in-out;
 }
 
 .main .get-in-touch-form__input::placeholder {
@@ -780,6 +798,10 @@ body {
   font-size: 18px;
   line-height: 25px;
   color: #BFBFBF;
+}
+
+.main .get-in-touch-form__input:hover {
+  border-color: #F101BF;
 }
 
 .main .get-in-touch-form__textarea {
@@ -799,6 +821,11 @@ body {
   padding: 25px 167px;
   cursor: pointer;
   margin-top: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main .get-in-touch-form__button:hover {
+  background: rgba(204, 204, 204, 0.1);
 }
 
 .main .get-in-touch .downloads {
@@ -888,5 +915,22 @@ body {
   line-height: 25px;
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.footer-right-side-navbar__element:before {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #fff;
+  width: 0%;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.footer-right-side-navbar__element:hover:before {
+  content: '';
+  width: 100%;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
