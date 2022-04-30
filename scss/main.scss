@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "media.scss";
 
 * {
   margin: 0;
@@ -69,8 +70,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &-typography {
+      width: 60%;
       display: flex;
       flex-direction: column;
       gap: 88px;
@@ -119,15 +122,20 @@ body {
     }
 
     &-image {
+      width: 40%;
+      height: 666px;
       position: relative;
       transform-style: preserve-3d;
+      background-image: url(../../img/phone1.png);
+      background-repeat: no-repeat;
+      background-position: right;
 
       &:before {
         content: "";
         width: 460px;
         height: 300px;
         position: absolute;
-        left: -100px;
+        left: -200px;
         top: -50px;
         background: rgba(250, 0, 255, 0.6);
         filter: blur(250px);
@@ -143,9 +151,9 @@ body {
         height: 665px;
         position: absolute;
         top: 0px;
-        left: 0px;
+        left: 120px;
         background: #FFFFFF;
-        opacity: 0.15;
+        opacity: 0.25;
         filter: blur(150px);
         transform: translateZ(-1px);
       }
@@ -171,6 +179,10 @@ body {
   &-markets {
     display: flex;
     gap: 28px;
+  }
+
+  &-markets-big {
+    display: none;
   }
 }
 
@@ -260,8 +272,21 @@ body {
       align-items: center;
       padding-right: 176px;
 
+      &-wrapper-image {
+        position: relative;
+        width: 70%;
+        height: 1000px;
+
+        &__img {
+          position: absolute;
+          left: -40%;
+          top: 35%;
+        }
+      }
+
       &-wrapper-text {
         position: relative;
+        width: 30%;
 
         &:after {
           content: "";
@@ -350,6 +375,7 @@ body {
     color: #ffffff;
     padding-left: 100px;
     position: relative;
+    display: flex;
 
     &-text {
       &__typography {
@@ -371,6 +397,10 @@ body {
     }
 
     &-graphs {
+      position: relative;
+      width: 50%;
+      height: 400px;
+
       &__graph {
         position: absolute;
         padding: 24px;
@@ -380,39 +410,39 @@ body {
       }
 
       &__first {
-        right: 25%;
-        top: -100px;
+        right: 15%;
+        top: -15%;
       }
 
       &__second {
-        left: 38%;
-        top: 160px;
+        left: -12%;
+        top: 45%;
       }
 
       &__third {
         position: absolute;
-        left: 47%;
-        top: 90px;
+        left: 10%;
+        top: 30%;
         display: flex;
         align-items: center;
         gap: 18px;
       }
 
       &__fourth {
-        left: 55.5%;
-        top: 220px;
+        left: 30%;
+        top: 60%;
         z-index: 2;
       }
 
       &__fifth {
-        left: 68%;
-        top: 90px;
+        left: 60%;
+        top: 30%;
         z-index: 1;
       }
 
       &__sixth {
-        left: 50%;
-        top: 325px;
+        left: 15%;
+        bottom: -15%;
         z-index: 1;
 
       }
@@ -421,8 +451,8 @@ body {
         display: flex;
         gap: 18px;
         position: absolute;
-        left: 68%;
-        top: 400px;
+        left: 55%;
+        bottom: -15%;
       }
 
       &__circle {
@@ -543,7 +573,7 @@ body {
 
       &:after {
         content: "";
-        width: 1022px;
+        width: 95%;
         height: 952px;
         position: absolute;
         background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
@@ -668,6 +698,7 @@ body {
       height: 1038.21px;
       background-image: url(../../img/iphone-long.png);
       background-position: right;
+      background-repeat: no-repeat;
       background-size: 100%;
       display: flex;
       flex-direction: column;

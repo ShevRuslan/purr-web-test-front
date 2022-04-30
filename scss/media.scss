@@ -1,0 +1,664 @@
+@media screen and (max-width:1266px) {
+  body .header {
+    padding-right: 20px;
+  }
+
+  body .main {
+    .qr-code {
+      .orders {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .our-mission {
+      padding-left: 15px;
+
+      .contact {
+        padding: 62px 30px;
+      }
+
+      .content {
+        padding-right: 30px;
+      }
+    }
+
+    .scanner {
+      height: 100%;
+
+      .scanner-steps {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .scanner-images {
+          width: auto;
+          margin-top: 60px;
+        }
+
+        .scanner-text {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .integration {
+      display: flex;
+      flex-direction: column;
+
+      &-text {
+        margin-bottom: 100px;
+      }
+
+      &-graphs {
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1100px) {
+  body .header {
+    .downloads {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  body .main {
+    .qr-code {
+      background:
+        linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.19931722689075626) 50%, rgba(0, 0, 0, 1) 100%),
+        url(../../img/background-dj.png) no-repeat 0 0/100%,
+        url(../../img/background-coctail.png) no-repeat 0% 50%/100%, ;
+      padding-top: 500px;
+
+      .orders {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 160px;
+      }
+
+      &-first-order,
+      &-second-order,
+      &-content {
+        align-self: inherit;
+      }
+    }
+
+    .our-mission {
+      .content {
+        flex-direction: column-reverse;
+
+        &-wrapper-text {
+          width: 50%;
+          text-align: center;
+
+          &__content {
+            width: 100%;
+          }
+        }
+
+        &-wrapper-image {
+          width: auto;
+          height: auto;
+
+          &__img {
+            width: 100%;
+            height: auto;
+            position: static;
+            margin-top: 60px;
+            margin-bottom: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    .header {
+      padding: 15px;
+      padding-right: 0px;
+
+      .navbar {
+        padding-right: 15px;
+        gap: 0px;
+        justify-content: space-between;
+      }
+
+
+      .about-us-image {
+        width: 30%;
+        background-image: url(../../img/iphone-half.png);
+
+        &:before {
+          width: 90%;
+          height: 600px;
+          filter: blur(170px);
+          left: -100px;
+
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    .main {
+      .our-mission {
+        .contact {
+          flex-direction: column;
+
+          &-new,
+          &-login {
+            width: 100%;
+          }
+        }
+      }
+
+      .qr-code {
+        &-generate {
+          margin-bottom: 200px;
+
+          &-wrapper-image {
+            &::before {
+              right: auto;
+              top: auto;
+              bottom: -10%;
+              left: 60%;
+              font-size: 20px;
+              width: 150px;
+              display: flex;
+              align-items: flex-end;
+            }
+
+            &::after {
+              top: 90%;
+              right: 0%;
+              bottom: 0%;
+              left: 100%;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+
+      .scanner {
+        &-images {
+          flex-direction: column;
+        }
+      }
+
+      .no-tab {
+        display: none;
+      }
+
+      .get-in-touch {
+        .wrapper-form {
+          padding: 0 15px;
+        }
+      }
+
+      .integration {
+        padding-left: 15px;
+
+        &-graphs {
+          width: 100%;
+
+          &__first {
+            right: auto;
+            left: -10%;
+            top: 40%;
+
+            img {
+              width: 144px;
+              height: auto;
+            }
+          }
+
+          &__second {
+            display: none;
+          }
+
+          &__third {
+            right: auto;
+            left: 0;
+            top: 0;
+          }
+
+          &__fourth {
+            left: auto;
+            right: 25%;
+            top: -10%;
+
+            img {
+              width: 90px;
+              height: auto;
+            }
+          }
+
+          &__fifth {
+            left: auto;
+            right: 1%;
+            top: -27%;
+
+            img {
+              width: 85px;
+              height: auto;
+            }
+          }
+
+          &__sixth {
+            left: 30%;
+            bottom: auto;
+            right: auto;
+            top: 25%;
+
+            img {
+              width: 90px;
+              height: auto;
+            }
+          }
+
+          &__seventh {
+            left: 40%;
+            bottom: auto;
+            right: auto;
+            top: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .main {
+      .get-in-touch {
+        .downloads {
+          &-typography {
+            &__text {
+              font-size: 34px;
+            }
+
+            margin-bottom: 45px;
+          }
+
+          &__play-market,
+          &__app-store {
+            width: 100%;
+
+            a {
+              img {
+                width: 100%;
+              }
+            }
+          }
+
+          &-markets {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .footer {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+
+      &-left-side {
+        margin-top: 58px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    .header {
+      z-index: 2;
+
+      .navbar {
+        &-login {
+          &__icon {
+            display: none;
+          }
+        }
+      }
+
+      .about-us {
+        &-typography {
+
+          &__heading {
+            font-size: 35px;
+          }
+
+          &-decoding {
+            &__line {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .downloads {
+        &-markets {
+          display: none;
+        }
+
+        &-markets-big {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          margin-top: 34px;
+        }
+
+        &__app-store,
+        &__play-market {
+          a {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+
+    .main {
+      .our-mission {
+        .content {
+          &-wrapper-text {
+            width: 100%;
+            text-align: left;
+          }
+        }
+      }
+
+      .scanner {
+        .scanner-steps {
+          padding-left: 15px;
+
+          .scanner-text {
+            text-align: left;
+          }
+        }
+      }
+
+      .integration {
+        &-graphs {
+          &__third {
+            width: 110px;
+            height: 22px;
+
+            img {
+              width: 25%;
+            }
+          }
+
+          &__circle {
+            &:nth-child(4) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .qr-code {
+        .orders {
+          .downloads-markets {
+            display: none;
+          }
+
+          .qr-code-second-order__image,
+          .qr-code-first-order__image {
+            width: 281px;
+          }
+
+          .downloads-markets-big {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            a {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        &-generate-wrapper-image {
+          &::after {
+            left: 90%;
+            top: 70%;
+          }
+
+          &__image {
+            width: 182px;
+          }
+        }
+
+        &-generate-content {
+          padding: 0 15px;
+          flex-direction: column;
+          text-align: left;
+          align-items: flex-start;
+
+        }
+      }
+
+      .ordering {
+        .wrapper-ordering-content {
+          padding: 0 15px;
+          justify-content: flex-start;
+        }
+      }
+
+      .get-in-touch-form-city {
+        flex-direction: column;
+      }
+
+      .get-in-touch-form__button {
+        width: 100%;
+        padding: 25px 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    .header {
+      .navbar {
+        &-logo {
+          justify-content: flex-start;
+        }
+      }
+
+      .about-us {
+        margin-top: 110px;
+
+        &-typography {
+          z-index: 2;
+          gap: 24px;
+
+          &__heading {
+            font-size: 25px;
+          }
+
+          &-decoding {
+            &__text {
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        &-image {
+          width: 161px;
+          height: 322px;
+          background-size: contain;
+        }
+      }
+
+      .downloads {
+
+        &-typography {
+          z-index: 2;
+
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        &-markets-big {
+          z-index: 2;
+        }
+
+        &-markets-big {
+          align-items: center;
+        }
+
+        &__app-store,
+        &__play-market {
+          width: 70%;
+        }
+      }
+    }
+
+    .main {
+      margin-top: 70px;
+
+      .our-mission {
+        padding: 0;
+
+        .contact {
+          padding: 0 15px;
+
+          &-new {
+            &__typography {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .content {
+          margin-top: 110px;
+          padding: 0 15px;
+
+          &-wrapper-text {
+            &__typography {
+              font-size: 24px;
+            }
+
+            &__content {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .scanner {
+        &-text {
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__content {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .integration {
+        &-text {
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__content {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .qr-code {
+        .orders {
+          padding: 0 15px;
+
+          .downloads-markets-big {
+            align-items: center;
+
+            .downloads__app-store,
+            .downloads__play-market {
+              width: 100%;
+              text-align: center;
+
+              img {
+                width: 70%;
+              }
+            }
+          }
+        }
+
+        &-content {
+          width: 100%;
+
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__text {
+            font-size: 16px;
+          }
+        }
+
+        &-generate-content {
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__text {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .ordering {
+        &-content {
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__text {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .get-in-touch {
+        &-text {
+          &__typography {
+            font-size: 24px;
+          }
+
+          &__content {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
