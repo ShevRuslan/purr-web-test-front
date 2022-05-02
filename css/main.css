@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@100;400;500&family=Roboto:wght@400;500&display=swap");
 @font-face {
   font-family: 'Avenir';
   src: url(../../fonts/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url(../../fonts/notosans.woff);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../../fonts/Robotomedium.woff);
 }
 
 @media screen and (max-width: 1266px) {
@@ -254,6 +268,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  body .cookie {
+    padding-left: 10px;
+    gap: 20px;
+  }
   body .header {
     z-index: 2;
   }
@@ -261,7 +279,7 @@
     display: none;
   }
   body .header .about-us-typography__heading {
-    font-size: 30px;
+    font-size: 25px;
   }
   body .header .about-us-typography-decoding__line {
     display: none;
@@ -714,7 +732,7 @@ body {
   height: 665px;
   position: absolute;
   top: 0px;
-  left: 20%;
+  right: 0%;
   background: #FFFFFF;
   opacity: 0.35;
   filter: blur(150px);
@@ -745,12 +763,12 @@ body {
 }
 
 .wrapper-cookie {
-  display: none;
   background: #212834;
   width: 100%;
   position: fixed;
   bottom: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .cookie {

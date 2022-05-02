@@ -248,6 +248,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  body .cookie {
+    padding-left: 10px;
+    gap: 20px;
+  }
   body .header {
     z-index: 2;
   }

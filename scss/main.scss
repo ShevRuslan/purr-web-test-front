@@ -152,7 +152,7 @@ body {
         height: 665px;
         position: absolute;
         top: 0px;
-        left: 20%;
+        right: 0%;
         background: #FFFFFF;
         opacity: 0.35;
         filter: blur(150px);
@@ -188,12 +188,12 @@ body {
 }
 
 .wrapper-cookie {
-  display: none;
   background: #212834;
   width: 100%;
   position: fixed;
   bottom: 0;
   transition: all 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .cookie {
