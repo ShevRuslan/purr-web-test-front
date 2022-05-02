@@ -253,7 +253,7 @@
   }
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 576px) {
   body .header {
     z-index: 2;
   }
@@ -261,7 +261,7 @@
     display: none;
   }
   body .header .about-us-typography__heading {
-    font-size: 35px;
+    font-size: 30px;
   }
   body .header .about-us-typography-decoding__line {
     display: none;
@@ -455,7 +455,7 @@
     gap: 24px;
   }
   body .header .about-us-typography__heading {
-    font-size: 25px;
+    font-size: 18px;
   }
   body .header .about-us-typography-decoding__text p {
     font-size: 14px;
